@@ -11,4 +11,4 @@
 - [x] Strict Mode 바로가기
 - [x] Global This 바로가기
 - [x] Date Types 바로가기
-- [ ] Type Conversion 바로가기
+- [x] Type Conversion 바로가기
