@@ -69,6 +69,30 @@ const calculateTotal = function(moneyA, moneyB, moneyC, moneyD) {
   
 
 
+// 객체 안에서 this
+
+const user = {
+  total : 0,
+  name : 'heeso',
+  age : 26,
+  address : 'somewhere',
+  grades : [80,90,100],
+  totalGrades : function(){
+    console.log( this.grades );
+  // totalGrades : (){
+  //   console.log( this.grades );
+  // }                                 - 줄여쓰기만 했을 뿐, 위의 totalGrades 랑 똑같이 일반함수이다.
+  }
+}
+    // 콘솔 창에 user.totalGrades() 입력하면 user 전체가 출력됨
+    // 일반함수는 나를 호출한 대상이 this 가 됨 = user
+    // 일반함수를 이용하면 this 를 정확히 불러올 수 있음
+
+    // 객체의 메서드를 정의할 때에는 화살표 함수보다는 일반 함수로 !
+
+
+
+
 
   /* 다음 함수를 작성해봅니다. -------------------------------------------------- */
   
