@@ -52,6 +52,14 @@
 // 배열 요소 순환(loop)
 // for 문, for ~ of문
 
+for(let i = 0; i < friends.length; i++){
+    console.log(friends[i]);
+}
+
+for(let value of friends){
+    console.log(value);
+}
+
 
 // 배열 복사
 let copiedArray;
