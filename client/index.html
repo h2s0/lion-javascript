@@ -6,8 +6,13 @@
 
     <link rel="stylesheet" href="./style.css" />
 
+    
     <script src="./lib/dom/getNode.js"></script>
-    <script src="./chapter/dom/07.event.js" defer></script>
+    <script src="./lib/dom/attr.js"></script>
+    <script src="./lib/dom/insert.js"></script>
+    <script src="./lib/dom/css.js"></script>
+    <script src="./lib/dom/bindEvent.js"></script>
+    <script src="./chapter/dom/09.delegation.js" defer></script>
     <!-- <script src="./main.js"></script> -->
 
     <title>Document</title>
@@ -15,15 +20,44 @@
 
 <body>
     
-    <h1 class="center">
-        <span class="first" id ="message" data-size="10" data-tab-index="1">hello</span>
+    <!-- <h1 class="center">
+        <span class="first" id ="message" data-size="10" data-tab-index="1" >hello</span> -->
         <!-- This is comment -->
-        <span class="second">javascript</span>
-    </h1>
+        <!-- <span class="second">javascript</span>
+    </h1> -->
     
-    <ul class="todo">
+    <!-- <ul class="todo">
 
     </ul>
+
+    <div class="ground">
+        <img src="https://en.js.cx/clipart/ball.svg" id="ball" alt="축구공">
+    </div> -->
+
+    <!-- 08.bubble.js
+    <section>
+        section
+        <article>
+            article
+            <p>p</p>
+        </article>
+    </section> -->
+
+        <ul class="container">
+            <li class="home" data-name="home">
+              <span>🏠</span><button>Home</button>
+            </li>
+            <li class="about" data-name="about">
+              <span>👦</span><button>About</button>
+            </li>
+            <li class="project" data-name="project">
+              <span>⭐️</span><button>Project</button>
+            </li>
+            <li class="contact" data-name="contact">
+              <span>📞</span><button>Contact</button>
+            </li>
+        </ul>
+
 
 </body>
 </html>
