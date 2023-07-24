@@ -1,22 +1,67 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
+<html lang="ko-KR">
+
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
 
-    <!-- <script src="./lib1/dom/getNode.js"></script>
-    <script src="./lib1/dom/css.js"></script>
-    <script src="./lib1/dom/attr.js"></script>
-    <script src="./lib1/dom/clearContents.js"></script>
-    <script src="./lib1/dom/insert.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="./main.js" type="module"></script>
 
-    <title>Document</title>
-</head>
+    <title>랜덤 다이스 🎲</title>
 
-<body>
+  </head>
+
+  <body>
+    <article id="RecordCouter" class="RecordDice">
+      <h1 class="logo">
+        <img src="./assets/logo.png" alt="레코드 카운터" height="200" />
+        <div class="star right-star"><img src="./assets/star.png" alt="반짝이별" /></div>
+        <div class="star left-star"><img src="./assets/star.png" alt="반짝이별" /></div>
+      </h1>
+      <div class="bg"></div>
+      <div id="diceContainer">
+        <div id="cube">
+          <div class="top"></div>
+          <div class="front"></div>
+          <div class="left"></div>
+          <div class="back"></div>
+          <div class="right"></div>
+          <div class="bottom"></div>
+        </div>
+      </div>
   
-</body>
+  
+      <div class="buttonGroup">
+        <button type="button" class="rollButton">주사위 <br />
+          굴리기</button>
+        <button type="button" disabled>기록</button>
+        <button type="button" disabled>초기화</button>
+      </div>
+      <div class="recordListWrapper" hidden>
+        <table class="recordList">
+          <caption>레코드 리스트</caption>
+          <div class="line"></div>
+          <thead>
+            <tr>
+              <th scope="col">회차</th>
+              <th scope="col">기록</th>
+              <th scope="col">합계</th>
+            </tr>
+          </thead>
+          <tbody>
+          <!-- <tr>
+              <td>0</td>
+              <td>5</td>
+              <td>5</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </article>
+  </body>
+
 </html>
