@@ -46,7 +46,7 @@ const defaultOptions = {
 // delayP 함수를 실행하면 리턴되는 값이 promise 객체입니다.
 
 // options : 함수가 받은 매개변수 - 실행부에서 적힌 값들이 여기 올라와서 
-function delayP(options){
+export function delayP(options){
 
   // 구조 분해 할당
   let config = { ...defaultOptions }
